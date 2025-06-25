@@ -1,0 +1,15 @@
+faiss-cpu
+numpy
+sentence-transformers
+python-dotenv
+pymongo
+typer
+rich
+sounddevice
+soundfile
+SpeechRecognition
+google-generativeai
+jinja2
+cryptography
+pytest
+mongomock 

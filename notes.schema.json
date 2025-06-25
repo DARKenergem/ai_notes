@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Notes",
+  "type": "object",
+  "properties": {
+    "_id": {"type": "integer", "description": "Unique identifier for the note, generated using the counters collection"},
+    "title": {"type": "string", "description": "Title of the note"},
+    "content": {"type": "string", "description": "Content of the note, may be encrypted if encrypt flag is used"},
+    "tags": {"type": "array", "items": {"type": "string"}, "description": "List of tags associated with the note for categorization and triggering agents"},
+    "workspace": {"type": "string", "description": "Workspace to which the note belongs, defaults to 'default'"},
+    "encrypted": {"type": "boolean", "description": "Indicates whether the content is encrypted", "default": false},
+    "created_at": {"type": "string", "format": "date-time", "description": "Timestamp when the note was created"},
+    "updated_at": {"type": "string", "format": "date-time", "description": "Timestamp when the note was last updated"}
+  },
+  "required": ["_id", "title", "content", "workspace", "created_at", "updated_at"]
+} 

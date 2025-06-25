@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - api.env
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python -m modules.cli --help
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6.0
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ai_notes
+      MONGO_INITDB_ROOT_PASSWORD: notes
+    # Uncomment below to persist MongoDB data
+    # volumes:
+    #   - mongo_data:/data/db
+
+# volumes:
+#   mongo_data: 
