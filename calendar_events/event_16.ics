@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AI Notes App//Calendar Event//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16@ai-notes-app
+DTSTAMP:20250625T083709Z
+DTSTART:20250626T083709
+DTEND:20250626T093709
+SUMMARY:Project Planning Meeting
+DESCRIPTION:Discussed timeline for Q1 project. Key milestones: Phase 1 by March 15, Phase 2 by April 30. Team needs to be expanded by 2 developers.
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+END:VCALENDAR

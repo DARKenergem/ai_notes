@@ -1,0 +1,26 @@
+{
+  "calendar_reminder": {
+    "trigger": "tag:reminder",
+    "action": "calendar_event"
+  },
+  "whatsapp_share": {
+    "trigger": "tag:share",
+    "action": "share_to_whatsapp"
+  },
+  "ai_rephrase": {
+    "trigger": "tag:rephrase",
+    "action": "rephrase_with_gemini"
+  },
+  "auto_tag": {
+    "trigger": "tag:[]",
+    "action": "suggest_tags"
+  },
+  "meeting_notes": {
+    "trigger": "tag:meeting",
+    "action": "calendar_event"
+  },
+  "todo_item": {
+    "trigger": "tag:todo",
+    "action": "calendar_event"
+  }
+} 
